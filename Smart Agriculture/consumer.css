@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+.box1{
+    height: 500px; width: 630px; border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.557);
+    padding-left: 40px; padding-right: 40px;
+    position: absolute; top: 120px; left: 130px;
+    color: white; font-family: "Anton", sans-serif;
+}
+.home_nav a{
+    color: white; text-decoration: none; 
+    padding: 20px; font-size: 20px; 
+}
+.home_nav{
+    position: absolute; top: -29px;
+    padding: 2px;
+    height: 60px; margin-top: 30px;
+}
+a{
+    position: relative; top: 14px;
+    color: rgb(31, 79, 31);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.desc1{
+    position: absolute; left: 200px; top: 950px;
+}
+.card1{
+    background-color: white; height: 390px; width: 420px;
+    position: absolute; left: 920px; top: 930px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px black;
+}
+.desc2{
+    position: absolute; left: 860px; top: 1550px;
+}
+.card2{
+    background-color: white; height: 390px; width: 420px;
+    position: absolute; left: 200px; top: 1530px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px black;
+}
+.desc3{
+    position: absolute; left: 200px; top: 2150px;
+}
+.card3{
+    background-color: white; height: 390px; width: 420px;
+    position: absolute; left: 920px; top: 2130px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px black;
+}
+.desc4{
+    position: absolute; left: 860px; top: 2750px;
+}
+.card4{
+    background-color: white; height: 390px; width: 420px;
+    position: absolute; left: 200px; top: 2730px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px black;
+}
+#desc{
+    height: 300px; width: 560px;
+    font-size: 25px; font-weight: 500; font-family: Arial, Helvetica, sans-serif;
+}
+#card:hover{
+    box-shadow: 12px 12px 30px black;
+}
+footer{
+    background-color: rgb(123, 81, 3);
+    height: 170px; width: 1518px;
+    position: absolute; top: 3225px;
+    padding-top: 90px;
+}
+footer a{
+    font-size: 20px; color: white;
+    padding-top: 50px; padding: 25px;
+}
+footer a:hover{
+    color: black;
+}

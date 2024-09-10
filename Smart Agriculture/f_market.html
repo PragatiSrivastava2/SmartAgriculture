@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Want to Sell - Farmers' Marketplace</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Farmers' Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sell.html">Want to Sell</a></li>
+                <li><a href="buy.html">Want to Buy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sell-form">
+            <h2>Sell Your Produce</h2>
+            <form id="sellForm">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="quantity">Quantity (in kg):</label>
+                <input type="number" id="quantity" name="quantity" required>
+                
+                <label for="price">Price per kg:</label>
+                <input type="number" id="price" name="price" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmers' Marketplace</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Funds</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsrtMFV0EjKhfRo0WD575q04belUib-KjQVw&s);
+    line-height: 1.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #073c25;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar .logo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+    background: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    background: #e8491d;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.donate-btn:hover {
+    background: #c83717;
+}
+
+/* Claim Funds Form Styles */
+.claim-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.claim-form-container h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.claim-form-container p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.claim-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.claim-form-container input[type="file"],
+.claim-form-container input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.claim-form-container button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.claim-form-container button:hover {
+    background: #c83717;
+}
+
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><span style="color:green">AsAAn</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="claim-funds.html">Claim Funds</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate-btn">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Claim Funds Form -->
+    <div class="claim-form-container">
+        <h1>Claim Funds Due to Crisis</h1>
+        <p>Please fill out the form below and upload the required documents to claim funds.</p>
+        
+        <form action="/submit-claim" method="post" enctype="multipart/form-data">
+            <label for="farmer-id">Farmer's ID Card</label>
+            <input type="file" id="farmer-id" name="farmer-id" required>
+            
+            <label for="land-docs">Land Ownership Documents</label>
+            <input type="file" id="land-docs" name="land-docs" required>
+            
+            <label for="gps-photos">GPS Camera Photos</label>
+            <input type="file" id="gps-photos" name="gps-photos" required>
+            
+            <label for="bank-details">Bank Account Details</label>
+            <input type="text" id="bank-details" name="bank-details" placeholder="Account Number, Bank Name, Branch, IFSC Code" required>
+            
+            <label for="damage-report">Damage Assessment Report</label>
+            <input type="file" id="damage-report" name="damage-report" required>
+            
+            <label for="recent-photos">Recent Photos of Affected Area</label>
+            <input type="file" id="recent-photos" name="recent-photos" required>
+            
+            <label for="crop-insurance">Crop Insurance Policy (if applicable)</label>
+            <input type="file" id="crop-insurance" name="crop-insurance">
+            
+            <label for="yield-records">Previous Yield Records</label>
+            <input type="file" id="yield-records" name="yield-records" required>
+            
+            <label for="incident-report">Incident Report</label>
+            <input type="file" id="incident-report" name="incident-report" required>
+            
+            <label for="local-cert">Local Government Certification</label>
+            <input type="file" id="local-cert" name="local-cert" required>
+            
+            <button type="submit">Submit Claim</button>
+        </form>
+    </div>
+</body>
+</html>
